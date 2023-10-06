@@ -1,7 +1,15 @@
-.bg-image{
+.bg-image1{
   background-image: url(../../../assets/banner-4.jpg), 
-  linear-gradient(rgba(255, 255, 255, 0.5),rgba(241, 240, 240, 0.5));
+  linear-gradient(rgba(255, 255, 255, 0.6),rgba(241, 240, 240, 0.8));
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-image2{
+  background-image: url(../../../assets/banner-1.jpg), 
+  linear-gradient(rgba(255, 255, 255, 0.6),rgba(241, 240, 240, 0.8));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
