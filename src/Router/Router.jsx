@@ -4,37 +4,34 @@ import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import EventDetails from "../Components/WhyUs/BannerDetails/EventDetails";
-
-
+import EventDetails from "../Components/WhyUs/EventDetails/EventDetails";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout></MainLayout>,
     errorElement: <Error></Error>,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('/event.json')
+        loader: () => fetch("/event.json"),
       },
       {
-        path: '/login',
-        element:<Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path: '/register',
-        element:<Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
       {
-        path: '/:id',
-        element:<EventDetails></EventDetails>,
-        loader: ()=> fetch('/event.json')
+        path: "/:id",
+        element: <EventDetails></EventDetails>,
+        loader: () => fetch("/event.json"),
       },
-
-    ]
-  }
-])
+    ],
+  },
+]);
 
 export default router;

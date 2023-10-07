@@ -1,8 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaBars } from 'react-icons/fa';
-import userIcon from '../../../assets/user.png'
+import { FaBars } from "react-icons/fa";
+import userIcon from "../../../assets/user.png";
+import { useContext } from "react";
+import { UserAuthContext } from "../../../AuthContext/AuthContext";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
+  const { logOut, currentUser } = useContext(UserAuthContext);
+
+  const handleSignOut = () => {
+    return logOut()
+      .then(() => toast.success("Successfully LogOut!"))
+      .catch((error) => {
+        const errorMessage = error.message;
+        toast.error(errorMessage);
+      });
+  };
 
   const navLink = (
     <>
@@ -58,22 +71,34 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <div className="w-10 rounded-full border">
-                {/* {currentUser ? (
+                {currentUser ? (
                   <img src={currentUser?.photoURL} />
                 ) : (
                   <img src={userIcon} />
-                )} */}
+                )}
                 <img src={userIcon} />
               </div>
             </div>
           </label>
-          
         </div>
-        <Link className="btn btn-neutral" to={'/login'}>Login</Link>
+        <div className="ml-5">
+          {currentUser ? (
+            <button
+              onClick={handleSignOut}
+              className="btn btn-neutral"
+              to={"/login"}
+            >
+              Logout
+            </button>
+          ) : (
+            <Link className="btn btn-neutral" to={"/login"}>
+              Login
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Navbar;
-

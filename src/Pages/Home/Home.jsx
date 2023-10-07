@@ -9,12 +9,17 @@ import sponsor1 from "../../assets/sp-1.png";
 import sponsor2 from "../../assets/sp-2.png";
 import sponsor3 from "../../assets/sp-3.png";
 import sponsor4 from "../../assets/sp-4.png";
+import { Helmet } from "react-helmet";
+import Testimonials from "../../Components/Testimonials/Testimonials";
 
 const Home = () => {
   const data = useLoaderData();
 
   return (
-    <div>
+    <div className="">
+      <Helmet>
+        <title>Home </title>
+      </Helmet>
       <div className="">
         <div className="carousel lg:h-[800px] w-full">
           <div id="slide1" className="carousel-item relative w-full">
@@ -42,7 +47,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-14 space-y-10">
+      <div className="my-24">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold">
             Featured <span className="text-[#eb347a]">Events</span>
@@ -54,14 +59,14 @@ const Home = () => {
             <hr className="border w-52 h-1 bg-[#eb347a] "></hr>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-16">
           {data.map((aEvent) => (
             <Events key={aEvent.id} aEvent={aEvent}></Events>
           ))}
         </div>
       </div>
 
-      <div className="mt-14">
+      <div className="my-24">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold">
             <span className="text-[#eb347a]">Why </span>Choose{" "}
@@ -73,9 +78,12 @@ const Home = () => {
             <hr className="border w-52 h-1 bg-[#eb347a] "></hr>
           </div>
         </div>
-        <WhyUs></WhyUs>
+        <div className="mt-16">
+          <WhyUs></WhyUs>
+        </div>
       </div>
-      <div className="mb-10 space-y-10">
+
+      <div className="my-20">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold">
             <span className="text-[#eb347a]">Our </span>Sponsor{" "}
@@ -88,18 +96,17 @@ const Home = () => {
           </div>
         </div>
 
-        <Marquee pauseOnHover speed={50}>
-          <img src={sponsor1} className="w-60" alt="" />
-          <img src={sponsor2} className="w-60" alt="" />
-          <img src={sponsor3} className="w-60" alt="" />
-          <img src={sponsor4} className="w-60" alt="" />
-          {/* <img src={sponsor7} className="w-60" alt="" />
-          <img src={sponsor8} className="w-60" alt="" /> */}
-        </Marquee>
-
-        <div>
-          
+        <div className="mt-16">
+          <Marquee pauseOnHover speed={50}>
+            <img src={sponsor1} className="w-60" alt="" />
+            <img src={sponsor2} className="w-60" alt="" />
+            <img src={sponsor3} className="w-60" alt="" />
+            <img src={sponsor4} className="w-60" alt="" />
+          </Marquee>
         </div>
+      </div>
+      <div className="mt-16">
+        <Testimonials></Testimonials>
       </div>
     </div>
   );

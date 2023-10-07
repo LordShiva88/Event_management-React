@@ -1,6 +1,6 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import "./Banner.css";
-import { FaFacebook, FaInstagram, FaShare, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsShareFill } from "react-icons/bs";
 
 const EventDetails = () => {
