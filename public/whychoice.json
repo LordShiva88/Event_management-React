@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Expert Musical Curation",
+    "icon": "FaMusic",
+    "description": "We specialize in curating diverse musical experiences tailored to your event theme."
+  },
+  {
+    "id": 2,
+    "title": "Top Talent Collaboration",
+    "icon": "FaMicrophone",
+    "description": "Collaboration with top musicians, bands, and DJs to ensure electrifying performances."
+  },
+  {
+    "id": 3,
+    "title": "Seamless Event Management",
+    "icon": "FaClock",
+    "description": "Punctual execution, adhering to timelines and delivering events as promised."
+  },
+  {
+    "id": 4,
+    "title": "Innovative Interactive Activities",
+    "icon": "FaPartyPopper",
+    "description": "Innovative ideas for interactive activities, ensuring a memorable event for attendees."
+  },
+  {
+    "id": 5,
+    "title": "Passionate Event Team",
+    "icon": "FaHeart",
+    "description": "Passionate team dedicated to making your musical event extraordinary and unforgettable."
+  },
+  {
+    "id": 6,
+    "title": "Customized Event Planning",
+    "icon": "FaBullseye",
+    "description": "Tailored event planning and management, from soundchecks to stage setups."
+  }
+]

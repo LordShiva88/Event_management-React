@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
+import userIcon from '../../../assets/user.png'
 
 const Navbar = () => {
 
@@ -62,29 +63,13 @@ const Navbar = () => {
                 ) : (
                   <img src={userIcon} />
                 )} */}
+                <img src={userIcon} />
               </div>
             </div>
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <Link to={'/bookMark'}>Book Mark</Link>
-            </li>
-            <li>
-              {/* {currentUser ? (
-                <button onClick={logOut} to={"/login"} className="">
-                  Log Out
-                </button>
-              ) : (
-                <Link to={"/login"} className="">
-                  Login
-                </Link>
-              )} */}
-            </li>
-          </ul>
+          
         </div>
+        <Link className="btn btn-neutral" to={'/login'}>Login</Link>
       </div>
     </div>
   );

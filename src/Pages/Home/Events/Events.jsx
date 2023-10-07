@@ -1,31 +1,48 @@
-import { Link } from "react-router-dom";
+import { CiLocationOn } from 'react-icons/Ci';
+import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Events = ({ aEvent }) => {
-  const { image, title, ticket_price, venue, date } = aEvent;
-  console.log(aEvent);
+  const { image, title, ticket_price, venue, date, description, id } = aEvent;
+
+  useEffect(()=>{
+    AOS.init({duration: 3000})
+  },[])
+
   return (
-    <div className="border hover:bg-base-200 shadow-xl">
+    <div className="border hover:bg-base-200 shadow-xl"  data-aos="zoom-out-up">
       <div className="relative">
         <img src={image} alt="Shoes" />
         <small className="bg-[#eb347a] text-center px-5 py-2 text-white font-medium absolute top-4">
           {date}
         </small>
       </div>
-      <div className="space-y-3 p-5">
-        <div>
+      <div className="card-body space-y-3">
+        <div className="space-y-3">
           <h2 className="card-title">{title}</h2>
-          <p></p>
-          <p>{venue}</p>
+          <p>{description.slice(0, 100)}....<Link to={`/${id}`} className='text-[#eb347a]'> Details</Link></p>
+          <div className="flex items-center gap-1">
+            <CiLocationOn className="text-3xl"></CiLocationOn>
+            <p>{venue}</p>
+          </div>
         </div>
-        <hr />
-        <div className="flex justify-between ">
-          <button className="">Get Ticket</button>
-          <h2>Upcoming</h2>
-          <p>{ticket_price}</p>
-        </div>
+      </div>
+      <hr />
+      <div className="flex justify-between px-6 py-5">
+        <Link className="hover:text-[#eb347a]">Get Ticket</Link>
+        <h2 className='text-sky-600'>Upcoming</h2>
+        <p className='text-[#eb347a]'>{ticket_price}</p>
       </div>
     </div>
   );
+};
+
+Events.propTypes = {
+  aEvent: PropTypes.object,
 };
 
 export default Events;
