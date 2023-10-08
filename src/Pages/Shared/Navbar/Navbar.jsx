@@ -4,6 +4,7 @@ import userIcon from "../../../assets/user.png";
 import { useContext } from "react";
 import { UserAuthContext } from "../../../AuthContext/AuthContext";
 import toast from "react-hot-toast";
+import logo from "../../../assets/log.png";
 
 const Navbar = () => {
   const { logOut, currentUser } = useContext(UserAuthContext);
@@ -22,7 +23,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "text-green-500" : "")}
+          className={({ isActive }) => (isActive ? "text-[#eb347a]" : "")}
         >
           Home
         </NavLink>
@@ -30,7 +31,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/shopping"
-          className={({ isActive }) => (isActive ? "text-green-500" : "")}
+          className={({ isActive }) => (isActive ? "text-[#eb347a]" : "")}
         >
           Shopping
         </NavLink>
@@ -38,7 +39,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/cart"
-          className={({ isActive }) => (isActive ? "text-green-500" : "")}
+          className={({ isActive }) => (isActive ? "text-[#eb347a]":"")}
         >
           Cart
         </NavLink>
@@ -47,8 +48,11 @@ const Navbar = () => {
   );
 
   return (
-    <div className="lg:px-12 md:px-6 navbar  bg-base-100 nav">
-      <h2 className="sm:hidden md:block">Logo</h2>
+    <div className="lg:px-12 md:px-6 navbar bg-gray-800 text-gray-50 nav">
+      <div className="hidden md:flex ">
+        <img src={logo} className="w-36" />
+        <h1 className="text-xl font-bold text-[#eb347a]">Music</h1>
+      </div>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost md:hidden">
@@ -56,14 +60,14 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="dropdown-content mt-3 z-[1] p-5 space-y-3 shadow bg-base-200 text-black rounded-box w-52"
           >
             {navLink}
           </ul>
         </div>
       </div>
       <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal px-1">{navLink}</ul>
+        <ul className="px-1 flex gap-10">{navLink}</ul>
       </div>
 
       <div className="navbar-end">
@@ -76,7 +80,6 @@ const Navbar = () => {
                 ) : (
                   <img src={userIcon} />
                 )}
-                <img src={userIcon} />
               </div>
             </div>
           </label>
@@ -85,13 +88,13 @@ const Navbar = () => {
           {currentUser ? (
             <button
               onClick={handleSignOut}
-              className="btn btn-neutral"
+              className="btn btn-error btn-outline"
               to={"/login"}
             >
               Logout
             </button>
           ) : (
-            <Link className="btn btn-neutral" to={"/login"}>
+            <Link className="btn btn-error btn-outline" to={"/login"}>
               Login
             </Link>
           )}

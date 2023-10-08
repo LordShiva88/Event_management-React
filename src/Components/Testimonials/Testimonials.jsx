@@ -18,7 +18,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative mx-auto my-20">
+    <section className="mx-auto lg:w-2/3 my-20">
       <div className="space-y-2 text-center">
         <h2 className="text-3xl font-bold">
           <span className="text-[#eb347a]">Testimonial</span>
@@ -31,8 +31,8 @@ const Testimonials = () => {
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <>
-            <div className="w-full h-[290px] p-8 bg-white rounded-md shadow-lg dark:bg-gray-800 mt-10">
-              <p className="leading-loose text-gray-500 dark:text-gray-400">
+            <div className="max-w-sm h-[250px] p-8 bg-white rounded-md shadow-lg dark:bg-gray-800 mt-10">
+              <p className=" text-gray-500 dark:text-gray-400">
                 {testimonial.description}
               </p>
 

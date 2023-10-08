@@ -17,7 +17,7 @@ const Events = ({ aEvent }) => {
     <div className="border hover:bg-base-200 shadow-xl"  data-aos="zoom-in">
       <div className="relative">
         <img src={image} alt="Shoes" />
-        <small className="bg-[#eb347a] text-center px-5 py-2 text-white font-medium absolute top-4">
+        <small className="bg-[#eb347a] text-center px-5 py-2 text-white font-bold absolute -bottom-3 left-1/3 rounded-full">
           {date}
         </small>
       </div>

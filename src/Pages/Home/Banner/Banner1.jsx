@@ -13,10 +13,10 @@ const Banner1 = () => {
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
-                1000,
-                "Where Music Meets with ",
-                1000,
+                2000,
                 "Where Music Meets with Our Soul ",
+                3000,
+                "Uniting Souls Through the Power of Music",
               ]}
               repeat={Infinity}
             />
@@ -37,7 +37,7 @@ const Banner1 = () => {
         <p className="text-2xl font-semibold">
           {moment().format("MMMM Do YYYY")}
         </p>
-        <h2 className="text-3xl font-bold">Christmas Event In the City</h2>
+        <h2 className="md:text-5xl text-3xl font-bold">Christmas Event In the City</h2>
         <div className="lg:w-2/3 text-center bg-[#eb347a] text-white rounded-lg md:text-6xl text-3xl p-6 border">
           <Countdown date={Date.now() + 300000000}></Countdown>
         </div>

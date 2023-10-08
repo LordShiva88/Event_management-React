@@ -3,6 +3,7 @@ import "./Banner.css";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsShareFill } from "react-icons/bs";
 
+
 const EventDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
@@ -10,13 +11,27 @@ const EventDetails = () => {
   const filterData = data.find((detail) => detail.id === id);
 
   console.log(filterData);
-  const { image, description, start_date, end_date, venue, address, title } =
-    filterData;
+  const {
+    image,
+    description,
+    start_date,
+    end_date,
+    venue,
+    address,
+    title,
+    image_urls,
+  } = filterData;
+  console.log(image_urls);
+
+
+
   return (
     <div className="relative">
       <div className="banner w-full h-[400px] flex justify-between items-center p-10">
         <div className="flex-1">
-          <h2 className="lg:text-7xl text-4xl font-bold text-black">Are You Ready For This Exited Event?</h2>
+          <h2 className="lg:text-7xl text-4xl font-bold text-black">
+            Are You Ready For This Exited Event?
+          </h2>
         </div>
         <div className="flex-end">
           <Link
@@ -30,6 +45,7 @@ const EventDetails = () => {
       <div className="grid lg:grid-cols-3 my-10">
         <div className="bg-white border border-gray-200 rounded-lg shadow lg:col-span-2 p-6">
           <img className="rounded-t-lg" src={image} alt="" />
+
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -42,8 +58,8 @@ const EventDetails = () => {
             <hr />
             <div className="flex justify-center gap-10 text-2xl mt-5 ">
               <div className="flex gap-3 items-center text-[#eb347a]">
-              <BsShareFill></BsShareFill>
-              <p className="text-xl font-bold">Share</p>
+                <BsShareFill></BsShareFill>
+                <p className="text-xl font-bold">Share</p>
               </div>
               <FaFacebook className="hover:text-[#eb347a]"></FaFacebook>
               <FaTwitter className="hover:text-[#eb347a]"></FaTwitter>

@@ -9,11 +9,19 @@ import sponsor1 from "../../assets/sp-1.png";
 import sponsor2 from "../../assets/sp-2.png";
 import sponsor3 from "../../assets/sp-3.png";
 import sponsor4 from "../../assets/sp-4.png";
+import sponsor5 from "../../assets/brand logo.png";
+import sponsor6 from "../../assets/log.png";
 import { Helmet } from "react-helmet";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useState } from "react";
 
 const Home = () => {
   const data = useLoaderData();
+
+  const [showAll, setShowAll] = useState(6)
+
+
 
   return (
     <div className="">
@@ -60,10 +68,30 @@ const Home = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-16">
-          {data.map((aEvent) => (
+          {data.slice(0, showAll).map((aEvent) => (
             <Events key={aEvent.id} aEvent={aEvent}></Events>
           ))}
         </div>
+        {
+          showAll === 6 ?
+         <div className="flex justify-center mt-20">
+         <button onClick={()=>setShowAll(data.length)} className="btn btn-outline btn-error hover:text-white">
+           <span>
+             <FaArrowRight></FaArrowRight>
+           </span>{" "}
+           Show more
+         </button>
+       </div> :<div className="flex justify-center mt-20">
+          <button onClick={()=>setShowAll(6)} className="btn btn-outline btn-error hover:text-white">
+            <span>
+              <FaArrowLeft></FaArrowLeft>
+            </span>{" "}
+            See Less
+          </button>
+        </div>
+        }
+        
+        
       </div>
 
       <div className="my-24">
@@ -102,6 +130,8 @@ const Home = () => {
             <img src={sponsor2} className="w-60" alt="" />
             <img src={sponsor3} className="w-60" alt="" />
             <img src={sponsor4} className="w-60" alt="" />
+            <img src={sponsor5} className="w-60" alt="" />
+            <img src={sponsor6} className="w-60" alt="" />
           </Marquee>
         </div>
       </div>

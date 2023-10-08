@@ -1,0 +1,222 @@
+[
+  {
+      "id": 1,
+      "img_url": "https://i.ibb.co/ZhF9Hwv/product-1.png",
+      "name": "Professional Violin",
+      "rating": 4.9,
+      "price": 599.99,
+      "features": ["Solid Spruce Top", "Maple Back and Sides", "Ebony Fingerboard"],
+      "description": "High-quality professional violin with excellent tone and playability, suitable for advanced musicians.",
+      "discount": 15,
+      "category": "Violins"
+  },
+  {
+      "id": 2,
+      "img_url": "https://i.ibb.co/tPvnNbM/violin2.jpg",
+      "name": "Student Violin",
+      "rating": 4.5,
+      "price": 199.99,
+      "features": ["Spruce Top", "Maple Back and Sides", "Ebony Pegs"],
+      "description": "Student violin with a warm tone and durable construction, perfect for beginners and music students.",
+      "discount": 10,
+      "category": "Violins"
+  },
+  {
+      "id": 3,
+      "img_url": "https://i.ibb.co/tPvnNbM/violin3.jpg",
+      "name": "Electric Violin",
+      "rating": 4.7,
+      "price": 349.99,
+      "features": ["Solid Body", "Active Pickups", "Built-in Effects"],
+      "description": "Electric violin with a modern design and versatile sound options, ideal for stage performances and recording.",
+      "discount": 12,
+      "category": "Violins"
+  },
+  {
+      "id": 4,
+      "img_url": "https://i.ibb.co/tPvnNbM/violin4.jpg",
+      "name": "Baroque Violin",
+      "rating": 4.6,
+      "price": 449.99,
+      "features": ["Hand-Carved Solid Wood", "Gut Strings", "Baroque Bow"],
+      "description": "Baroque style violin with authentic materials and craftsmanship, perfect for historical music enthusiasts.",
+      "discount": 18,
+      "category": "Violins"
+  },
+  {
+      "id": 5,
+      "img_url": "https://i.ibb.co/tPvnNbM/guitar1.jpg",
+      "name": "Acoustic Guitar",
+      "rating": 4.7,
+      "price": 249.99,
+      "features": ["Spruce Top", "Rosewood Fretboard", "Steel Strings"],
+      "description": "High-quality acoustic guitar with a rich tone and comfortable playability, ideal for beginners and experienced players.",
+      "discount": 20,
+      "category": "Guitars"
+  },
+  {
+      "id": 6,
+      "img_url": "https://i.ibb.co/tPvnNbM/guitar2.jpg",
+      "name": "Electric Guitar",
+      "rating": 4.8,
+      "price": 299.99,
+      "features": ["Solid Body", "Humbucker Pickups", "Tremolo Bridge"],
+      "description": "Electric guitar with versatile tonal options, suitable for various music genres and playing styles.",
+      "discount": 18,
+      "category": "Guitars"
+  },
+  {
+      "id": 7,
+      "img_url": "https://i.ibb.co/tPvnNbM/guitar3.jpg",
+      "name": "Classical Guitar",
+      "rating": 4.6,
+      "price": 179.99,
+      "features": ["Cedar Top", "Mahogany Back and Sides", "Nylon Strings"],
+      "description": "Classical guitar with a warm and mellow tone, perfect for classical and flamenco music.",
+      "discount": 15,
+      "category": "Guitars"
+  },
+  {
+      "id": 8,
+      "img_url": "https://i.ibb.co/tPvnNbM/guitar4.jpg",
+      "name": "Resonator Guitar",
+      "rating": 4.7,
+      "price": 349.99,
+      "features": ["Steel Body", "Single Cone", "Lipstick Pickup"],
+      "description": "Resonator guitar with a distinctive metallic tone, suitable for blues, bluegrass, and slide guitar playing.",
+      "discount": 12,
+      "category": "Guitars"
+  },
+  {
+      "id": 9,
+      "img_url": "https://i.ibb.co/tPvnNbM/headphone1.jpg",
+      "name": "Wireless Noise-Canceling Headphones",
+      "rating": 4.8,
+      "price": 199.99,
+      "features": ["Noise-Canceling", "Wireless", "Hi-Fi Sound"],
+      "description": "High-quality wireless headphones with noise-canceling technology, providing an immersive listening experience.",
+      "discount": 15,
+      "category": "Headphones"
+  },
+  {
+      "id": 10,
+      "img_url": "https://i.ibb.co/tPvnNbM/headphone2.jpg",
+      "name": "Bluetooth Over-Ear Headphones",
+      "rating": 4.7,
+      "price": 159.99,
+      "features": ["Bluetooth Connectivity", "Long Battery Life", "Comfortable Design"],
+      "description": "Over-ear headphones with high-quality sound and comfortable fit, perfect for long listening sessions.",
+      "discount": 10,
+      "category": "Headphones"
+  },
+  {
+      "id": 11,
+      "img_url": "https://i.ibb.co/tPvnNbM/headphone3.jpg",
+      "name": "Sport Wireless Earbuds",
+      "rating": 4.5,
+      "price": 89.99,
+      "features": ["Wireless", "Sweat-Resistant", "Secure Fit"],
+      "description": "Wireless earbuds designed for sports activities, ensuring a secure and comfortable fit during workouts.",
+      "discount": 8,
+      "category": "Headphones"
+  },
+  {
+      "id": 12,
+      "img_url": "https://i.ibb.co/tPvnNbM/headphone4.jpg",
+      "name": "Noise-Canceling Earbuds",
+      "rating": 4.6,
+      "price": 129.99,
+      "features": ["Active Noise Cancellation", "Touch Controls", "Compact Design"],
+      "description": "Earbuds with advanced noise cancellation technology for immersive audio experience in any environment.",
+      "discount": 12,
+      "category": "Headphones"
+  },
+  {
+      "id": 13,
+      "img_url": "https://i.ibb.co/tPvnNbM/bassguitar1.jpg",
+      "name": "Electric Bass Guitar",
+      "rating": 4.8,
+      "price": 299.99,
+      "features": ["Solid Body", "Active Pickups", "4-String"],
+      "description": "Electric bass guitar with powerful sound and comfortable playability, suitable for various music styles.",
+      "discount": 18,
+      "category": "Bass Guitars"
+  },
+  {
+      "id": 14,
+      "img_url": "https://i.ibb.co/tPvnNbM/bassguitar2.jpg",
+      "name": "Fretless Bass Guitar",
+      "rating": 4.7,
+      "price": 349.99,
+      "features": ["Mahogany Body", "Rosewood Fingerboard", "Smooth Fretless Design"],
+      "description": "Fretless bass guitar for unique and smooth tonal qualities, perfect for jazz and fusion music.",
+      "discount": 15,
+      "category": "Bass Guitars"
+  },
+  {
+      "id": 15,
+      "img_url": "https://i.ibb.co/tPvnNbM/bassguitar3.jpg",
+      "name": "Acoustic Bass Guitar",
+      "rating": 4.6,
+      "price": 279.99,
+      "features": ["Spruce Top", "Mahogany Back and Sides", "4-String"],
+      "description": "Acoustic bass guitar with warm and resonant tones, suitable for unplugged performances and jam sessions.",
+      "discount": 12,
+      "category": "Bass Guitars"
+  },
+  {
+      "id": 16,
+      "img_url": "https://i.ibb.co/tPvnNbM/bassguitar4.jpg",
+      "name": "Bass Guitar Starter Pack",
+      "rating": 4.5,
+      "price": 199.99,
+      "features": ["Bass Amp Included", "Gig Bag", "Online Lessons"],
+      "description": "Complete bass guitar starter pack for beginners, including all necessary accessories and instructional materials.",
+      "discount": 10,
+      "category": "Bass Guitars"
+  },
+  {
+      "id": 17,
+      "img_url": "https://i.ibb.co/tPvnNbM/drum1.jpg",
+      "name": "Complete Drum Set",
+      "rating": 4.8,
+      "price": 399.99,
+      "features": ["5-Piece Shell Pack", "Cymbals and Hardware Included", "Double-Braced Stands"],
+      "description": "High-quality drum set with versatile components, perfect for drummers of all styles and skill levels.",
+      "discount": 25,
+      "category": "Drums"
+  },
+  {
+      "id": 18,
+      "img_url": "https://i.ibb.co/tPvnNbM/drum2.jpg",
+      "name": "Electronic Drum Kit",
+      "rating": 4.6,
+      "price": 499.99,
+      "features": ["Mesh-Head Pads", "Built-in Sounds", "MIDI Connectivity"],
+      "description": "Electronic drum kit with realistic feel and customizable sounds, suitable for practice and recording.",
+      "discount": 20,
+      "category": "Drums"
+  },
+  {
+      "id": 19,
+      "img_url": "https://i.ibb.co/tPvnNbM/drum3.jpg",
+      "name": "Compact Jazz Drum Set",
+      "rating": 4.7,
+      "price": 349.99,
+      "features": ["4-Piece Shell Pack", "Swing-Style Hardware", "Wood Hoops"],
+      "description": "Compact jazz drum set with vintage vibe, perfect for small venues and intimate performances.",
+      "discount": 18,
+      "category": "Drums"
+  },
+  {
+      "id": 20,
+      "img_url": "https://i.ibb.co/tPvnNbM/drum4.jpg",
+      "name": "Junior Drum Set",
+      "rating": 4.5,
+      "price": 199.99,
+      "features": ["3-Piece Shell Pack", "Child-Friendly Sizes", "Sturdy Construction"],
+      "description": "Junior drum set designed for young drummers, providing a comfortable and enjoyable learning experience.",
+      "discount": 15,
+      "category": "Drums"
+  }
+]

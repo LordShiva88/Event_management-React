@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserAuthContext } from "../../AuthContext/AuthContext";
 import SocialLogIn from "../../Components/WhyUs/SocialLogin/SocialLogIn";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -11,6 +11,9 @@ const Login = () => {
 
   const { logIn } = useContext(UserAuthContext);
 
+  const location = useLocation();
+  const navigate = useNavigate()
+
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -19,7 +22,10 @@ const Login = () => {
 
 
     logIn(email, password)
-      .then(() => toast.success("Successfully Login!"))
+      .then(() => {
+        toast.success("Successfully Login!")
+        navigate(location?.state ? location.state : '/')
+      })
       .catch((error) => {
         const errorMessage = error.message;
         toast.error(errorMessage);
