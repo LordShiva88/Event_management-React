@@ -5,7 +5,6 @@ import UseData from "../../Hooks/useData";
 
 const Testimonials = () => {
   const { testimonials } = UseData();
-  console.log(testimonials);
 
   const settings = {
     dots: true,
@@ -15,6 +14,15 @@ const Testimonials = () => {
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -30,8 +38,8 @@ const Testimonials = () => {
       </div>
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
-          <>
-            <div className="max-w-sm h-[250px] p-8 bg-white rounded-md shadow-lg dark:bg-gray-800 mt-10">
+          <div key={testimonial.id}>
+            <div className="max-w-sm h-auto md:h-[250px]  p-8 bg-white rounded-md shadow-lg dark:bg-gray-800 mt-10">
               <p className=" text-gray-500 dark:text-gray-400">
                 {testimonial.description}
               </p>
@@ -53,7 +61,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </Slider>
     </section>

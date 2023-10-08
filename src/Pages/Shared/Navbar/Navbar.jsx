@@ -39,7 +39,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/cart"
-          className={({ isActive }) => (isActive ? "text-[#eb347a]":"")}
+          className={({ isActive }) => (isActive ? "text-[#eb347a]" : "")}
         >
           Cart
         </NavLink>

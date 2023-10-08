@@ -7,7 +7,7 @@ const firebaseConfig = {
   projectId: "login-form-1bde7",
   storageBucket: "login-form-1bde7.appspot.com",
   messagingSenderId: "370608956840",
-  appId: "1:370608956840:web:ae73ab6c9d23dd083d299d"
+  appId: "1:370608956840:web:ae73ab6c9d23dd083d299d",
 };
 
 const app = initializeApp(firebaseConfig);

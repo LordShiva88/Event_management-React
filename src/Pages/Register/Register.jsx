@@ -85,11 +85,11 @@ const Register = () => {
             Password
           </label>
           <div
-          onClick={() => setShowPassword(!showPassword)}
-          className="absolute top-1/2 right-2"
-        >
-          {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
-        </div>
+            onClick={() => setShowPassword(!showPassword)}
+            className="absolute top-1/2 right-2"
+          >
+            {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+          </div>
         </div>
 
         <div className="space-y-4">
@@ -127,7 +127,6 @@ const Register = () => {
           <SocialLogIn></SocialLogIn>
         </div>
       </form>
-      {/* <Toaster /> */}
     </div>
   );
 };

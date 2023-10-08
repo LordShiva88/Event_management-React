@@ -1,8 +1,7 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import "./Banner.css";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsShareFill } from "react-icons/bs";
-
 
 const EventDetails = () => {
   const data = useLoaderData();
@@ -23,29 +22,26 @@ const EventDetails = () => {
   } = filterData;
   console.log(image_urls);
 
-
-
   return (
     <div className="relative">
-      <div className="banner w-full h-[400px] flex justify-between items-center p-10">
+      <div className="banner w-full h-[400px] flex justify-between md:flex-row flex-col items-center p-10">
         <div className="flex-1">
           <h2 className="lg:text-7xl text-4xl font-bold text-black">
             Are You Ready For This Exited Event?
           </h2>
         </div>
         <div className="flex-end">
-          <Link
+          <button
             to={"/#slide2"}
-            className="text-white font-bold text-2xl px-10 py-5 bg-[#eb347a]"
+            className="text-white font-bold md:text-2xl px-10 py-5 bg-[#eb347a]"
           >
             Register Event Now
-          </Link>
+          </button>
         </div>
       </div>
       <div className="grid lg:grid-cols-3 my-10">
         <div className="bg-white border border-gray-200 rounded-lg shadow lg:col-span-2 p-6">
           <img className="rounded-t-lg" src={image} alt="" />
-
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

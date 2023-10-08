@@ -1,16 +1,17 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import Rating from "react-rating";
+import { PropTypes } from "prop-types";
 
-const CardData = ({product}) => {
-  const { img_url, name, price, rating, discount, category, id} = product;
+const CardData = ({ product }) => {
+  const { img_url, name, price, rating, discount, category } = product;
 
   const discountPrice = (price / 100) * discount;
 
   const afterDiscount = (price - discountPrice).toFixed(2);
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="bg-white  shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-2xl mx-auto md:w-80 w-full">
+      <div className="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 ">
         <div className="relative">
           {discount === 0 ? (
             ""
@@ -19,10 +20,16 @@ const CardData = ({product}) => {
               -{discount}% OFF
             </span>
           )}
-          <img className="rounded-t-lg p-8 h-[300px ]" src={img_url} alt="product image" />
+          <div className="flex justify-center">
+            <img
+              className="rounded-t-lg p-8  h-[250px]"
+              src={img_url}
+              alt="product image"
+            />
+          </div>
         </div>
 
-        <div className="px-5 pb-5 space-y-2">
+        <div className="px-5 pb-5 space-y-2 h-[250px]">
           <h3 className="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">
             {name}
           </h3>
@@ -32,14 +39,14 @@ const CardData = ({product}) => {
 
           <div className="flex gap-2">
             <Rating
-              // initialRating={rating}
+              initialRating={rating}
               readonly
               emptySymbol={
                 <FaStarHalfAlt className="text-red-400"></FaStarHalfAlt>
               }
               fullSymbol={<FaStar className="text-red-400"></FaStar>}
-            /> 
-             <p>{rating}</p>
+            />
+            <p>{rating}</p>
           </div>
 
           <div className="flex items-center justify-between">
@@ -59,10 +66,12 @@ const CardData = ({product}) => {
                 </div>
               )}
             </div>
+          </div>
+          <div className="flex justify-between">
             <button
               // onClick={()=>addItemIntoLS(id)}
               href="#"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="btn"
             >
               Add to cart
             </button>
@@ -73,4 +82,7 @@ const CardData = ({product}) => {
   );
 };
 
+CardData.propTypes = {
+  product: PropTypes.object,
+};
 export default CardData;

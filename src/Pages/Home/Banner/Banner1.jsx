@@ -37,7 +37,9 @@ const Banner1 = () => {
         <p className="text-2xl font-semibold">
           {moment().format("MMMM Do YYYY")}
         </p>
-        <h2 className="md:text-5xl text-3xl font-bold">Christmas Event In the City</h2>
+        <h2 className="md:text-5xl text-3xl font-bold">
+          Christmas Event In the City
+        </h2>
         <div className="lg:w-2/3 text-center bg-[#eb347a] text-white rounded-lg md:text-6xl text-3xl p-6 border">
           <Countdown date={Date.now() + 300000000}></Countdown>
         </div>

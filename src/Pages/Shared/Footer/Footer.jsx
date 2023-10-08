@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-6 bg-gray-800 text-gray-50">
       <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 divide-opacity-50">
-        <div className="grid grid-cols-3 gap-10 py-5">
+        <div className="grid md:grid-cols-3  gap-10 py-5 ">
           <div className="flex justify-center items-center">
             <img src={logo} className="" />
           </div>
@@ -20,9 +20,9 @@ const Footer = () => {
               <p>ltionnath4184@gmail.com</p>
             </div>
           </div>
-          <div>
-            <p className="pb-1 text-lg font-medium">Category</p>
-            <ul className="list-none footer-links">
+          <div className="px-4 mt-4 md:mt-0">
+            <p className=" text-lg font-medium">Category</p>
+            <ul className="">
               <li className="mb-2">
                 <a
                   href="#"

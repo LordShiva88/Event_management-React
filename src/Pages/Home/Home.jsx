@@ -19,9 +19,7 @@ import { useState } from "react";
 const Home = () => {
   const data = useLoaderData();
 
-  const [showAll, setShowAll] = useState(6)
-
-
+  const [showAll, setShowAll] = useState(6);
 
   return (
     <div className="">
@@ -72,26 +70,31 @@ const Home = () => {
             <Events key={aEvent.id} aEvent={aEvent}></Events>
           ))}
         </div>
-        {
-          showAll === 6 ?
-         <div className="flex justify-center mt-20">
-         <button onClick={()=>setShowAll(data.length)} className="btn btn-outline btn-error hover:text-white">
-           <span>
-             <FaArrowRight></FaArrowRight>
-           </span>{" "}
-           Show more
-         </button>
-       </div> :<div className="flex justify-center mt-20">
-          <button onClick={()=>setShowAll(6)} className="btn btn-outline btn-error hover:text-white">
-            <span>
-              <FaArrowLeft></FaArrowLeft>
-            </span>{" "}
-            See Less
-          </button>
-        </div>
-        }
-        
-        
+        {showAll === 6 ? (
+          <div className="flex justify-center mt-20">
+            <button
+              onClick={() => setShowAll(data.length)}
+              className="btn btn-outline btn-error hover:text-white"
+            >
+              <span>
+                <FaArrowRight></FaArrowRight>
+              </span>{" "}
+              Show more
+            </button>
+          </div>
+        ) : (
+          <div className="flex justify-center mt-20">
+            <button
+              onClick={() => setShowAll(6)}
+              className="btn btn-outline btn-error hover:text-white"
+            >
+              <span>
+                <FaArrowLeft></FaArrowLeft>
+              </span>{" "}
+              See Less
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="my-24">

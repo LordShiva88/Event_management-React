@@ -1,7 +1,7 @@
 [
   {
       "id": 1,
-      "img_url": "https://i.ibb.co/ZhF9Hwv/product-1.png",
+      "img_url": "https://i.ibb.co/qn0788y/violin.jpg",
       "name": "Professional Violin",
       "rating": 4.9,
       "price": 599.99,
@@ -12,7 +12,7 @@
   },
   {
       "id": 2,
-      "img_url": "https://i.ibb.co/tPvnNbM/violin2.jpg",
+      "img_url": "https://i.ibb.co/qn0788y/violin.jpg",
       "name": "Student Violin",
       "rating": 4.5,
       "price": 199.99,
@@ -21,20 +21,10 @@
       "discount": 10,
       "category": "Violins"
   },
-  {
-      "id": 3,
-      "img_url": "https://i.ibb.co/tPvnNbM/violin3.jpg",
-      "name": "Electric Violin",
-      "rating": 4.7,
-      "price": 349.99,
-      "features": ["Solid Body", "Active Pickups", "Built-in Effects"],
-      "description": "Electric violin with a modern design and versatile sound options, ideal for stage performances and recording.",
-      "discount": 12,
-      "category": "Violins"
-  },
+  
   {
       "id": 4,
-      "img_url": "https://i.ibb.co/tPvnNbM/violin4.jpg",
+      "img_url": "https://i.ibb.co/W2d64YS/violin-4.jpg",
       "name": "Baroque Violin",
       "rating": 4.6,
       "price": 449.99,
@@ -45,7 +35,7 @@
   },
   {
       "id": 5,
-      "img_url": "https://i.ibb.co/tPvnNbM/guitar1.jpg",
+      "img_url": "https://i.ibb.co/3WgHzqz/guiter-bg.png",
       "name": "Acoustic Guitar",
       "rating": 4.7,
       "price": 249.99,
@@ -56,7 +46,7 @@
   },
   {
       "id": 6,
-      "img_url": "https://i.ibb.co/tPvnNbM/guitar2.jpg",
+      "img_url": "https://i.ibb.co/s25Rc9T/product-1.png",
       "name": "Electric Guitar",
       "rating": 4.8,
       "price": 299.99,
@@ -67,7 +57,7 @@
   },
   {
       "id": 7,
-      "img_url": "https://i.ibb.co/tPvnNbM/guitar3.jpg",
+      "img_url": "https://i.ibb.co/ccgzfqh/guiter-bg-2.png",
       "name": "Classical Guitar",
       "rating": 4.6,
       "price": 179.99,
@@ -78,7 +68,7 @@
   },
   {
       "id": 8,
-      "img_url": "https://i.ibb.co/tPvnNbM/guitar4.jpg",
+      "img_url": "https://i.ibb.co/qsChqtk/guiter-bg5.png",
       "name": "Resonator Guitar",
       "rating": 4.7,
       "price": 349.99,
@@ -89,7 +79,7 @@
   },
   {
       "id": 9,
-      "img_url": "https://i.ibb.co/tPvnNbM/headphone1.jpg",
+      "img_url": "https://i.ibb.co/LCv2rT9/product-19-480x638.jpg",
       "name": "Wireless Noise-Canceling Headphones",
       "rating": 4.8,
       "price": 199.99,
@@ -100,7 +90,7 @@
   },
   {
       "id": 10,
-      "img_url": "https://i.ibb.co/tPvnNbM/headphone2.jpg",
+      "img_url": "https://i.ibb.co/n0G35WY/product-04-480x638.jpg",
       "name": "Bluetooth Over-Ear Headphones",
       "rating": 4.7,
       "price": 159.99,
@@ -111,7 +101,7 @@
   },
   {
       "id": 11,
-      "img_url": "https://i.ibb.co/tPvnNbM/headphone3.jpg",
+      "img_url": "https://i.ibb.co/z8FxpQ3/product-15-480x638.jpg",
       "name": "Sport Wireless Earbuds",
       "rating": 4.5,
       "price": 89.99,
@@ -122,7 +112,7 @@
   },
   {
       "id": 12,
-      "img_url": "https://i.ibb.co/tPvnNbM/headphone4.jpg",
+      "img_url": "https://i.ibb.co/55MGNJv/product-03-480x638.jpg",
       "name": "Noise-Canceling Earbuds",
       "rating": 4.6,
       "price": 129.99,
@@ -174,49 +164,5 @@
       "description": "Complete bass guitar starter pack for beginners, including all necessary accessories and instructional materials.",
       "discount": 10,
       "category": "Bass Guitars"
-  },
-  {
-      "id": 17,
-      "img_url": "https://i.ibb.co/tPvnNbM/drum1.jpg",
-      "name": "Complete Drum Set",
-      "rating": 4.8,
-      "price": 399.99,
-      "features": ["5-Piece Shell Pack", "Cymbals and Hardware Included", "Double-Braced Stands"],
-      "description": "High-quality drum set with versatile components, perfect for drummers of all styles and skill levels.",
-      "discount": 25,
-      "category": "Drums"
-  },
-  {
-      "id": 18,
-      "img_url": "https://i.ibb.co/tPvnNbM/drum2.jpg",
-      "name": "Electronic Drum Kit",
-      "rating": 4.6,
-      "price": 499.99,
-      "features": ["Mesh-Head Pads", "Built-in Sounds", "MIDI Connectivity"],
-      "description": "Electronic drum kit with realistic feel and customizable sounds, suitable for practice and recording.",
-      "discount": 20,
-      "category": "Drums"
-  },
-  {
-      "id": 19,
-      "img_url": "https://i.ibb.co/tPvnNbM/drum3.jpg",
-      "name": "Compact Jazz Drum Set",
-      "rating": 4.7,
-      "price": 349.99,
-      "features": ["4-Piece Shell Pack", "Swing-Style Hardware", "Wood Hoops"],
-      "description": "Compact jazz drum set with vintage vibe, perfect for small venues and intimate performances.",
-      "discount": 18,
-      "category": "Drums"
-  },
-  {
-      "id": 20,
-      "img_url": "https://i.ibb.co/tPvnNbM/drum4.jpg",
-      "name": "Junior Drum Set",
-      "rating": 4.5,
-      "price": 199.99,
-      "features": ["3-Piece Shell Pack", "Child-Friendly Sizes", "Sturdy Construction"],
-      "description": "Junior drum set designed for young drummers, providing a comfortable and enjoyable learning experience.",
-      "discount": 15,
-      "category": "Drums"
   }
 ]
