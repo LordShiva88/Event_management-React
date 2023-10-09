@@ -14,7 +14,7 @@ const WhyUs = () => {
     <div className="grid lg:max-w-5xl mx-auto lg:grid-cols-3 md:grid-cols-2 gap-5 my-10 ">
       {whyUs.map((why) => (
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           className="border p-3 text-center space-y-4"
           key={why.id}
         >
